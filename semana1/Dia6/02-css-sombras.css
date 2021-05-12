@@ -1,0 +1,29 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+.cuadrado{
+    
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 240px;
+    height: 350px;
+    background-color: #fbba00;
+    text-align: center;
+    /* centrar un elemento BLOQUEANTE block 
+    (CENTRADO ORIGINAL) */
+    margin: 0 auto;
+    margin-top: 50px;
+    /* box-shadow: [pixeles-eje-X] [pixeles-eje-Y] 
+    [difuminado] [color]: */
+
+    /* INSET valor adicional para que la sombra
+    sea interna - añ final de rgb */
+    box-shadow: 4px 4px 10px rgb(126, 126, 126)  ;
+}
+
+.cuadrado:hover{
+    box-shadow: 0px 0px 4px #bbb;
+}

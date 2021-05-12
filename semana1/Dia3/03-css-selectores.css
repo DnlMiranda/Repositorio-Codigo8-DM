@@ -1,0 +1,13 @@
+/* h2 selecciona a todos los h2 de la pagina */
+
+h2{
+color: rgb(255, 81, 0);
+}
+
+p, h1{
+    color: royalblue;
+}
+
+.sombra{
+    box-shadow: 0px 2px 8px #888;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form>div {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formularios en Html</h1>
+    </header>
+
+    <main>
+
+        <form action="">
+            <!-- para buena practica importante vincular el label con input -->
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" 
+                        placeholder="Ejm: Diana" />
+            </div>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" 
+                        placeholder="Ejm: Ramirez" />
+            </div>
+        
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" 
+                    placeholder="Ejm: 20" />
+        </div>
+        <div>
+            <label for="correo">Email:</label>
+            <input type="email" id="correo" 
+                    placeholder="Ejm: ejemplo@ejemplo.com" />
+        </div>
+        <div>
+            <label for="fecha">Fecha de Matrícula:</label>
+            <input type="date" id="fecha"                  />
+        </div>
+        <div>
+            <label for="bootcamp">Seleccione Bootcamp</label>
+            <select id="bootcamp">
+                <option value="web">Desarrollo WEb FullStack</option>
+                <option value="mkt">Marketing Digital</option>
+                <option value="apps">Desarrollo de Aplicaciones Móviles</option>
+            </select>
+
+        </div>
+        <div>
+            <label for="mensaje">Mensaje al prosor</label>
+            <textarea id="mensaje" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+    </main>
+</body>
+</html>

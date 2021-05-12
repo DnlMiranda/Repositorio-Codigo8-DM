@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+}
+
+h1, h2{
+    font-family: "miPrimeraFuente";
+    color: #ce055c;
+}
+
+.descripcion{
+    
+    font-size: 12px;
+    width: 200px;
+    height: 80px;
+    overflow: scroll;
+}
+
+.segundo__titulo{
+    font-family: "miFuenteBold";
+}
+
+.fuente__link{
+    font-family: 'Courgette', cursive;
+}
+
+a{
+    background-color: #c00;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+    font-family: "miPrimeraFuente";
+}
+
+a:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #c00;
+}
+
+.portada__codigo{
+    background-image: url('../imagenes/clem-onojeghuo-8soQzdz9XXA-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.alto__total{
+    height: 100vh;
+    
+}
+
+@font-face{
+    font-family: 'mifuentee';
+    src: url('../fonts/KronaOne-Regular.ttf')
+}
+
+.descripcion{
+    font-family: "mifuentee";
+}
+
+.tercer__titulo{
+    font: 42px "KronaOne-Regular"
+
+}
+
+.tercer__parrafo{
+    font: 16px;
+    border: 1px solid #c00;
+    background: linear-gradient(180deg, #1a98ef, #ef1aed)
+}
+
+.btn_iniciar_session{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, #1a98ef,#ef1aed )
+}
+
+
+
+.primera_imagen{
+    filter: grayscale(0.5);
+}
+
+.segunda_imagen{
+    /* 0.1 hasta el 1 */
+    filter:grayscale(1)
+}
+
+.tercer_imagen{
+    filter: sepia(1);
+}
+
+.cuarta_imagen{
+    /* 1px hasta 10px */
+    filter: blur(10px);
+}
+
+.quinta_imagen{
+    filter: invert(1);
+}
+
+.sexta_imagen{
+    filter: hue-rotate(270deg);
+}
+
+.septima_imagen{
+    filter: contrast(0.5);
+}

@@ -1,0 +1,96 @@
+/* la terceraa columna de los grupos de td y th */
+
+
+td:nth-child(3), th:nth-child(3){
+    background-color: pink;
+}
+
+thead tr{
+    background-color: coral;
+}
+
+/* aplicar border boleado a los extremos */
+
+thead tr:first-child th:first-child{
+   border-top-left-radius: 10px;
+}
+thead tr:first-child th:last-child{
+    border-top-right-radius: 10px;
+ }
+ 
+
+/* menu */
+
+/* que se pongan al costado */
+ nav li{
+     display: inline-block;
+ }
+
+ .nav-link{
+     text-decoration:  none;
+     font-family: sans-serif;
+     margin-right: 10px;
+     color: #444;
+ }
+/* en html todos los elementos que tengan la clase ''nav-link'' pero que ademas 
+tenga la clase active */
+ .nav-link.active{
+     font-weight: bold;
+ }
+
+/* siblings h2 hermanos de p */
+ h2~p{
+     color:orange
+ }
+
+ /* solo afecta al primer elemento parrafo p hermano */
+ h3 + p{
+    color: aquamarine;
+ }
+
+
+/* Todos los elementos de "article" excepto aquellos que tengan la clase "agotado" */
+ article:not(.agotado){
+     width: 300px;
+     box-shadow: 0px 0px 8px #888;
+     background: linear-gradient(90deg, #1d01b9e5, #1aef6c)
+ }
+
+ /* Todos los hijos de "article" excepto los "h4" */
+ article :not(h4) {
+     font-style: italic;
+ }
+
+
+ @font-face{
+    font-family: 'mifuentee';
+    src: url('../fonts/KronaOne-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'fuente2';
+    src: url(../fonts/ShadowsIntoLight-Regular.ttf);
+}
+.titulo_1{
+    font-family: "mifuentee";
+}
+
+.cabecera_1{
+    font-family: "fuente2";
+}
+
+
+
+.nav__link{
+    height: 35px;
+    width: 90px;
+    color: #ccc;
+}
+
+.color{
+    color: rgb(240, 240, 240);
+}
+
+.article{
+    padding: 10px;
+}

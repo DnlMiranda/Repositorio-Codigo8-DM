@@ -1,0 +1,123 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+@font-face {
+    font-family: 'DelaGothicOne-Regular';
+    src: url(./../fonts/DelaGothicOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url(./../fonts/BebasNeue-Regular.ttf);
+}
+
+body{
+    background-image: linear-gradient(90deg, #eeeeee, #dfdfdf);
+    background-color: #444;
+    border: 1px solid yellow;
+    /* viwport es la pantalla de visualizacion */
+    height: 100vh;
+    /*SOLUCION min-height*/
+    /* diferencia entre :
+
+    "min-height" = define una altura7 minima para un elemento, 
+    si su contenido necesita más de esa altura, 
+    entonces el elemento se EXPANDIRA
+    
+    VS 
+    
+    height= define una altura ESTATICA independiente 
+    del contenido de un elemento */
+    /* define una */
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 4rem;
+    font-family: "DelaGothicOne-Regular";
+    background-clip: text;
+    /* background-clip es una MASCARA DE RECORTE
+    en forma del TEXTO interno */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #fb007d, #fb7100, #fbba00);
+}
+
+.card{
+
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 0px 10px rgb(121, 121, 121);
+    border-radius: 10px;
+    /* CENTRAR ELEMENTO BLOQUEANTE, CENTRAR LA CAJA, NO EL TEXTO CONTENIDO */
+     margin: 50px auto 20px auto; 
+    /* usarlo siempre para HOVER
+    all: que propiedades van a ser afectadas para la transicion 
+    ease: funcion BEZIER*/
+    
+    transition: transform 0.5s ease, background-color 3s ease;
+    animation: cuadrado 5s ease 0.5s infinite ;
+}
+
+.card:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+    background-color: rgb(194, 194, 194);
+}
+
+
+.card img{
+    width: 100%;
+}
+
+h2{
+    font-family: "BebasNeue-Regular";
+    font-weight: 500;
+    font-size: 1rem;
+    
+}
+
+.be{    width: 100%;
+}
+
+
+/* ANIMACION 
+@keyframes cuadrado{
+    0%{
+        height: 100px;
+        width: 100px;
+        background-color: transparent;
+    }
+
+    25%{
+       height: 100px;
+       width: 100px;
+        background-color: aliceblue;
+        transform: translate(300px, 0px);
+    }
+
+    50%{
+        height: 100px;
+       width: 100px;
+       transform: translate(300px, 300px);
+    }
+
+   75%{
+    height: 100px;
+    width: 100px;
+    transform: translate(0px, 300px);
+
+   }
+
+    100%{
+        height: 100px;
+        width: 100px;
+        background-color: aliceblue;
+
+    }
+}
+*/

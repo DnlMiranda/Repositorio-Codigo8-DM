@@ -1,0 +1,137 @@
+/* propiedades de reseteo / quitar propiedades generales */
+* {
+    margin: 0;
+    padding: 0;
+    /* muy importante */
+    /* hace que los bordes y rellenos que esten
+    aumentando el tamaño de mi elemento,
+    no sean considerados */
+    box-sizing: border-box;
+}
+
+
+/* SELECTOR = colocar selector ''html'' etiqueta general */
+:root {
+    /* tamaños/tipos de fuente general, color */
+    /* Al modificar este color, se va modificar en todo el diseño */
+    --color-primario: #280fb1;
+    /* --font-kraneo: "KraneoOne-Regular"; */
+
+    /* 2-DECIMAL-RGB */
+    --color-secundario: rgb(2, 160, 200);
+
+    /* 3-RGBA -transparencia */
+    --color-verde-transparente: rgba(55, 200, 103, 0.5);
+    /*va de 0(transparente a 1(lleno full)*/
+}
+
+/* 4-HSL - Hue - Saturation - Lightness */
+
+
+h1 {
+    /* 1- RGB color exhadecimal rojo verde azul = 012456789 A B C D E F*/
+    color: var(--color-primario);
+    background-color: #ddd;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+
+.form-control {
+    border: none;
+    outline: none;
+    padding: 8px 8px 8px 32px;
+    border-radius: 5px;
+    border: 1px solid #280fb1;
+    border-bottom: 3px solid var(--color-primario);
+    background-image: url("./../imagenes/id.png");
+    background-repeat: no-repeat;
+    /* PRIMERO ES EL EJE 'X' LUEGO EL 'Y' */
+    background-position: left center;
+    background-size: 27px 27px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    height: 40px;
+    width: 50%;
+}
+
+/* cuando el input tiene el cursor dentro de si */
+.form-control:focus{
+    background-image: url("./../imagenes/id-hovereeee.png");
+}
+
+.cuadrado {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: var(--color-secundario);
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+}
+
+/* tamaños */
+.section1 {
+    background-color: var(--color-primario);
+    height: 60px;
+    /* usar medida relativa "%" */
+    /* 50% del ancho del padre / mitad de la pantalla */
+    width: 50%;
+}
+
+/*ocupa el 100% de section(su padre)*/
+.articulo1 {
+    background-color: var(--color-secundario);
+    height: 30px;
+    width: 50%;
+}
+
+/* no conviene DELIMITAR el ALTO del Parrafo 
+sin saber cuanto contenido habrá --> */
+/* el overflow es el DESBORDE - REBALSE 'hidden' 
+(oculta el excedente) --> */
+
+.parrafo1 {
+    width: 200px;
+    height: 100px;
+    background-color: #ddd;
+    overflow: auto;
+    margin-top: 40px;
+}
+
+/* PERSONALIZAR el SCROLLBAR */
+
+.parrafo1::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+.parrafo1::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(255, 51, 0);
+}
+
+.parrafo1::-webkit-scrollbar-track {
+    background-color: #ff443394;
+}
+
+.butn {
+    background-color: blueviolet;
+    height: 50px;
+    width: 200px;
+    color: #ddd;
+    margin-top: 20px;
+}
+
+/* **********  IMPORTANTE */
+/* los elementos IN-LINE no pueden tener
+ancho ni alto */
+
+
+.badge-rojo {
+    background-color: coral;
+}
+
+.imagen{
+    width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
