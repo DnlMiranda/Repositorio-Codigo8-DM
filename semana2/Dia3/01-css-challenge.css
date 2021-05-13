@@ -1,0 +1,142 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+.contenedor{
+background-color: rgb(32, 32, 32);
+height: 400px;
+padding: 50px;
+margin-top: 200px;
+
+    
+}
+
+/* PIRMER CARD */
+
+.card__uno{
+    width: 220px;
+    border-top: 3px solid #b6b6b6;
+    position: relative;
+    
+    
+    
+    
+    
+    
+
+}
+
+.card__sup{
+    padding: 25px 59px 25px 59px;
+    height: 150px;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 10px 10px 12px rgb(10, 10, 10);
+    cursor: pointer;
+    position: relative;
+    
+}
+
+
+
+.card__inf{
+    padding: 20px;
+    display: none;
+    background-color:#bbb;
+    height: 150px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top: 10px;
+    transition: all 0.5s ease;
+    
+    
+}
+
+
+
+/* TRANSITIONS */
+.card__inf{
+    transition: all 0.5s ease;
+}
+
+ 
+/* HOVER */
+
+.card__uno:hover .card__inf{
+    display: block;
+}
+
+.card__uno:hover .image2{
+    display: none;
+}
+
+.card__uno:hover .image{
+    display: block;
+}
+
+.card__uno:hover .card__sup{
+    background-image: linear-gradient(150deg, rgb(1, 168, 180), #0019fb, #3600fb);
+    box-shadow: none;
+}
+
+.card__uno:hover{
+    border-top: none;
+    box-shadow: 10px 10px 12px rgb(10, 10, 10);
+    
+}
+
+.card__uno:hover .card__inf{
+    position: absolute;
+    top: 150px;
+    
+    
+}
+
+.card__uno:hover .card
+
+
+
+
+
+.card__uno .card__img{
+    background-color: #fbba00;
+    height: 150px;
+    width: 100%;
+}
+
+.card__uno .card__sup i{
+    color: white;
+  
+}
+
+.image{
+    position: absolute;
+    left: 60px;
+    top: 25px;
+    display: none;
+    
+}
+
+
+
+.card__inf p{
+    font-size: 0.88rem;
+    line-height: 20px;
+}
+
+.card__inf .read{
+    color: blue;
+    width: 90px;
+    height: 25px;
+    margin-top: 15px;
+    border: 2px solid rgb(0, 60, 255);
+}
+
+/* SEGUNDO CARD */
+
+
+
+/* TERCER CARD */
+

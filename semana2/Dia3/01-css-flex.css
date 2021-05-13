@@ -1,0 +1,65 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+body{
+    background-color: #979797;
+    min-height: 100vh;
+    color: white;
+    
+}
+
+.padre{
+    /* MAX-WIDTH: EVITA EL SCROLL */
+    max-width: 600px;
+    /* border: 3px solid white; */
+    background-color: rgb(26, 26, 26);
+    margin: 100px auto 0 auto;
+    /* cuando un padre es flexible ,todos sus hijos
+    se ponen en linea */
+    /* VENTAJA:  */
+    display: flex; 
+    /* SI MIS HIJOS NECESITAN MAS ANCHO
+    Y EL PAPA ES MUY PEQUEÑO 
+    LOS HIJOS COLAPSAN x.x */
+    /* flex-wrap: wrap; */
+
+    /* ES EL UNICO QUE ACEPTA QUE LOS ELEMENTOS 
+    PUEDAN MEDIR, POR MAS QUE EXCEDA  */
+    height: 400px;
+    /* alinear los elementos en el eje principal */
+    /* EJE PRINCIPAL: "x" cuando flex-direction: row; */
+    /* EJE PRINCIPAL :"y" cuando flex-direction: columnn; */
+    /* POR DEFECTO un padre FLEX tiene flex-direction: row; */
+    flex-direction: column;
+    /* justify-content: => alinea los elementos en el eje PRINCIPAL ; */
+    /* align-items: => alinea los elementos en el eje SECUNDARIO */
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* todos los DIVS siendo hijos de PADRE */
+.hijo-1, .hijo-2, .hijo-3, .hijo-4{
+    /*width: 25%;*/
+    border: 1px solid salmon;
+    width: 100px;
+    
+}
+
+.hijo-1{
+    height: 100px;
+}
+
+.hijo-3{
+    height: 100%;
+   
+}
+
+
+
+/* cuando los hijos miden más ancho que el padre! 
+no se desbordan CARACTERISTICA DE ELEMENTOS FLEXIBLES */

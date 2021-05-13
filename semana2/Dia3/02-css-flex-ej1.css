@@ -1,0 +1,45 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+.header{
+    max-height: 60px;
+    border: 1px solid black;
+    display: flex;
+    padding: 0 2rem 0 2rem;
+    /* align-items : alinea los elementos en el eje PRINCIPAL X horizontal */
+    align-items: center;
+
+}
+
+.header__nav{
+    flex: 1;
+    
+    
+}
+
+
+
+.header__links{
+    display: flex;
+    
+    /* alinear en el eje principal X - horizontal */
+    /* gap: define un espacio entre hijo e
+    hijo en el eje principal ; */
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+}
+
+
+
+.header__links li a{
+    text-decoration: none;
+}
+
+.header__cart{
+    background-color: red;
+    
+}
