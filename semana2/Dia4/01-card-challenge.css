@@ -32,6 +32,12 @@ padding:0;
     gap: 2rem;
     justify-content: center;
     flex: 1;
-    align-items: center;
+    align-items: flex-start;
     
 }
+
+/* colocar las sgts propioedades
+para simular la apariencia de PINTEREST */
+/* flex-direction: column;
+align-content: flex-start;
+max-height:900px */
