@@ -38,8 +38,12 @@ overflow: hidden;
 
 .text{
     position: absolute;
-    top: 110px;
-    left: 90px;
+    top: 120px;
+    left: 78px;
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: white;
 }
 
 .card__arriba i{
