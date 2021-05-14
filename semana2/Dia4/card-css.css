@@ -1,0 +1,105 @@
+.card{
+    width: 300px;
+    border-top: 5px solid #fbba00;
+    
+    box-shadow: 0 0 15px rgb(112, 112, 112);
+    border-radius: 8px;
+    
+    
+}
+
+
+.card__figure{
+    overflow: hidden;
+    height: 250px;
+    background-color: red;
+}
+
+/* END FIGURE */
+
+/* SERVICES */
+
+/* le damos display flex a UL para que los li se pongan
+en ROW (hacia al costado) */
+.card__services{
+    height: 35px;
+   
+    display: flex;
+    list-style: none;
+    border-bottom: 2px solid #ddd;
+    
+    
+}
+
+.card__service{
+    
+    flex: 1;
+    /* para que ocupe el heigth 100% del padre 
+    pero que se alinea en los 2 ejes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(192, 192, 192);
+    border-right: 1px solid #ddd;
+    transition: flex 0.5s ease;
+    cursor: pointer;
+    
+}
+
+.card__service:last-child{
+    border-right: none;
+}
+/* end services */
+
+
+
+
+
+/* DESCRIPTION */
+
+@font-face {
+    font-family: 'Pangolin-Regular' ;
+    src: url(./assets/Pangolin-Regular.ttf);
+}
+.card__description{
+    height: 200px;
+    padding: 20px;
+}
+
+h3{
+    font-family: Pangolin-Regular ;
+    font-size: 1.5rem;
+    color:#fbba00;
+}
+
+p{
+    font-family: "Helvetica";
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    margin-top: 10px;
+    color: rgb(116, 116, 116);
+    
+}
+
+/* end description */
+
+/* HOVER */
+
+.card__service:hover{
+    background-color: #fbba00;
+    flex: 1.2;
+}
+
+.card__service:hover i{
+    color: white;
+}
+
+/* END HOVER */
+
+/* card extra */
+
+.card__extra{
+
+}
+
+/* end extra */
