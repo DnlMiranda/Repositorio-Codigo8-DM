@@ -20,8 +20,8 @@ body{
 .card{
 width: 310px;
 border-radius: 10px;
-box-shadow: 0 0 10px #bbb;
-background-color: #bbb;
+box-shadow: 0 0 10px rgb(7, 7, 7);
+
 margin: 20px auto 0 auto;
 overflow: hidden;
 position: relative;
@@ -90,6 +90,7 @@ overflow: hidden;
 /* ABAJOOOOOO */
 
 .card__abajo{
+    border-radius: 10px;
     height: 220px;
     background-color: rgb(247, 247, 247); 
     padding: 10px 15px 15px 15px;

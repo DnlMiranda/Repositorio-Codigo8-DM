@@ -1,0 +1,184 @@
+@import url(./fonts.css);
+
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+body{
+    font-family: "Ubuntu-Light";
+}
+
+.cabecera{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cabecera:before{
+    content: "";
+    z-index: -1;
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: scale();
+    background-color: hsl(217, 28%, 15%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    margin:10px 80px;
+    font-size: 0.95rem;
+   
+    
+    
+    
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    
+}
+
+.menu .nav__item{
+    margin: 15px;
+}
+
+
+.cabecera__content{
+    text-align: center;
+    color: white;
+    margin: 20px 560px;
+
+
+    
+}
+
+
+.cabecera__content *{
+    margin: 20px;
+}
+
+.btn__primary{
+    border: none;
+    font-family: "Ubuntu-Bold";
+    color: white;
+    background-image: linear-gradient(90deg, rgb(5, 197, 255), rgb(0, 92, 230));
+    width: 320px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+}
+
+
+.imagen__central{
+    transform: scale(0.9);
+    text-align: center;
+}
+
+
+
+
+/* PARTE 2 */
+
+.contenedor{
+    padding: 100px 200px;
+    background-color: hsl(218, 28%, 13%);
+}
+
+.contenedor__cajas{
+    
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: flex-start ;
+    padding: 0 20px;
+}
+
+.caja{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    padding: 70px 130px;
+    width: 50%;
+}
+
+.caja *{
+    color:whitesmoke;
+    margin: 20px 0px;
+}
+
+.caja p{
+    line-height: 1.5rem;
+}
+
+/* FIN PARTE 2 */
+
+
+
+/* PARTE 3 */
+
+.contenedor__tres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.contenedor__tres div:nth-child(2){
+    color: white;
+    line-height: 1.7rem;
+    width: 500px;
+}
+
+.contenedor__tres div h3:nth-child(1){
+    margin-bottom: 40px;
+}
+
+.contenedor__tres div p:nth-child(2){
+    margin-bottom: 40px;
+    color: white;
+}
+
+.contenedor__tres div p:nth-child(3){
+    color: white;
+    margin-bottom: 30px;
+}
+
+.button__see{
+    background-color: transparent;
+    border: none;
+    color: #65e2d9;
+    font-size: 1.1rem;
+   
+}
+
+.image__tres{
+    transform: scale(0.8);
+}
+
+.button__see:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+/* FIN PARTE 3 */
