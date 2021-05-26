@@ -24,7 +24,7 @@ body{
     /* content: "" aca va haber algo */
     content: "";
     z-index: -1;
-    background-image: url(./image/bg-pattern-intro.svg);
+    background-image: url(./images2/bg-pattern-intro.svg);
     transform: scale(1.5);
     position: absolute;
     width: 100%;
